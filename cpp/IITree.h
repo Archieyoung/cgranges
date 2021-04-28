@@ -78,6 +78,7 @@ public:
 		max_level = index_core(a);
 	}
 	bool overlap(const S &st, const S &en, std::vector<size_t> &out) const {
+        if (a.empty()) return false;
 		int t = 0;
 		StackCell stack[64];
 		out.clear();
